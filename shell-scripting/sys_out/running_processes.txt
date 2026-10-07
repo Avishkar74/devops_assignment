@@ -1,0 +1,35 @@
+USER         PID %CPU %MEM    VSZ   RSS TTY      STAT START   TIME COMMAND
+root           1  0.0  0.1  21888 13376 ?        Ss   08:10   0:02 /sbin/init
+root           2  0.0  0.0   3180  2208 ?        Sl   08:10   0:00 /init
+root           7  0.0  0.0   3196  2124 ?        Sl   08:10   0:00 plan9 --control-socket 7 --log-level 4 --server-fd 8 --pipe-fd 10 --log-truncate
+root          56  0.0  0.2  66832 19840 ?        S<s  08:10   0:04 /usr/lib/systemd/systemd-journald
+root         117  0.0  0.0  25284  6644 ?        Ss   08:10   0:06 /usr/lib/systemd/systemd-udevd
+systemd+     129  0.0  0.1  21344 13240 ?        Ss   08:10   0:00 /usr/lib/systemd/systemd-resolved
+systemd+     130  0.0  0.1  91036  8000 ?        Ssl  08:10   0:00 /usr/lib/systemd/systemd-timesyncd
+root         198  0.0  0.0   4244  2680 ?        Ss   08:10   0:00 /usr/sbin/cron -f -P
+message+     199  0.0  0.0   9656  5440 ?        Ss   08:10   0:00 @dbus-daemon --system --address=systemd: --nofork --nopidfile --systemd-activation --syslog-only
+root         216  0.0  0.1  18164  8776 ?        Ss   08:10   0:00 /usr/lib/systemd/systemd-logind
+root         246  0.0  0.0   3124  1972 tty1     Ss+  08:10   0:00 /sbin/agetty -o -p -- \u --noclear - linux
+syslog       260  0.0  0.0 222516  5948 ?        Ssl  08:10   0:00 /usr/sbin/rsyslogd -n -iNONE
+root         267  0.0  0.2 107040 23136 ?        Ssl  08:10   0:00 /usr/bin/python3 /usr/share/unattended-upgrades/unattended-upgrade-shutdown --wait-for-signal
+root         415  0.0  0.0   6700  4644 pts/1    Ss   08:10   0:00 /bin/login -f
+avishkar     461  0.0  0.1  20328 11580 ?        Ss   08:10   0:00 /usr/lib/systemd/systemd --user
+avishkar     462  0.0  0.0  21176  3576 ?        S    08:10   0:00 (sd-pam)
+avishkar     484  0.0  0.0   6080  5216 pts/1    S+   08:10   0:00 -bash
+polkitd     2282  0.0  0.1 308172  8112 ?        Ssl  09:32   0:00 /usr/lib/polkit-1/polkitd --no-debug
+root        3771  0.0  0.0   3188  1124 ?        Ss   12:04   0:00 /init
+root        3772  0.0  0.0   3200  1196 ?        S    12:04   0:00 /init
+avishkar    3773  0.0  0.0   2808  1856 pts/7    Ss+  12:04   0:00 sh
+root        3784  0.0  0.0   6672  4508 pts/9    Ss   12:04   0:00 /bin/login -f
+root        3837  0.0  0.1  20268 11416 ?        Ss   12:04   0:00 /usr/lib/systemd/systemd --user
+root        3838  0.0  0.0  21176  3496 ?        S    12:04   0:00 (sd-pam)
+root        3862  0.0  0.0   6080  5140 pts/9    S+   12:04   0:00 -bash
+root        3983  0.0  0.0   3204  1392 ?        S    12:04   0:00 /init
+root        3984  0.0  0.3 1353092 28108 pts/8   Ssl+ 12:04   0:02 /mnt/wsl/docker-desktop/docker-desktop-user-distro proxy --distro-name Ubuntu --docker-desktop-root /mnt/wsl/docker-desktop C:\Program Files\Docker\Docker\resources
+avishkar    4227  0.0  0.0   9304  5160 ?        Ss   12:04   0:00 /usr/bin/dbus-daemon --session --address=systemd: --nofork --nopidfile --systemd-activation --syslog-only
+root        6004  0.0  0.0   3196  1124 ?        Ss   13:14   0:00 /init
+root        6005  0.0  0.0   3196  1260 ?        S    13:14   0:00 /init
+avishkar    6006  0.0  0.0   6212  5532 pts/0    Ss   13:14   0:00 -bash
+root        6065  0.0  0.1 1756628 13768 ?       Ssl  13:21   0:00 /usr/libexec/wsl-pro-service
+avishkar    6145  0.2  0.0   4760  3500 pts/0    S+   13:26   0:00 /bin/bash ./system_info.sh
+avishkar    6153  0.0  0.0   8288  4320 pts/0    R+   13:26   0:00 ps aux
