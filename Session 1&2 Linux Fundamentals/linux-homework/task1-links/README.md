@@ -8,4 +8,7 @@ The soft link works differently. It points to the path of the original file, whi
 
 So, in simple terms, a hard link is another name for the same file, while a soft link is like a shortcut that points to the original file.
 
-![alt text](image.png)
+![alt text](images/image.png)
+
+> Terminal in `task1-links`. `ls -li` shows `hardlink.txt` and `original.txt` with the same inode and link count 2, while `softlink.txt` has its own inode and points `-> original.txt`.  
+> After `rm original.txt`, `cat hardlink.txt` still prints the text but `cat softlink.txt` fails with "No such file or directory". This shows a hard link is a second name for the same data and a soft link is only a path.  
